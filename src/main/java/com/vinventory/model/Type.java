@@ -1,4 +1,4 @@
-package com.dealership.model;
+package com.vinventory.model;
 
 public enum Type {
 

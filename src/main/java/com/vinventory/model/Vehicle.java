@@ -1,10 +1,11 @@
-package com.dealership.model;
+package com.vinventory.model;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-
-@Table(name="Vehicle")
+@Entity
+@Table(name="vehicle")
 public class Vehicle {
 	
 	@Id
@@ -70,6 +71,10 @@ public class Vehicle {
 	public String toString() {
 		return "Vehicle [id=" + id + ", type=" + type + ", make=" + make + ", model=" + model + ", year=" + year
 				+ ", price=" + price + "]";
+	}
+	public Vehicle() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 	
 	

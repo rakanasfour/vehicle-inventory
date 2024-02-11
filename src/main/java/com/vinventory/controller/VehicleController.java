@@ -1,4 +1,4 @@
-package com.dealership.controller;
+package com.vinventory.controller;
 
 import java.util.List;
 
@@ -9,8 +9,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.dealership.model.Vehicle;
-import com.dealershipl.service.VehicleService;
+import com.vinventory.model.Vehicle;
+import com.vinventory.service.VehicleService;
+
 
 @RestController
 @RequestMapping("/api")

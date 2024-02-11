@@ -1,12 +1,14 @@
-package com.dealershipl.service;
+package com.vinventory.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import com.dealership.VehicleRepository;
-import com.dealership.model.Vehicle;
+import com.vinventory.model.Vehicle;
+import com.vinventory.repository.VehicleRepository;
 
+@Service
 public class VehicleService {
 	
 	@Autowired
