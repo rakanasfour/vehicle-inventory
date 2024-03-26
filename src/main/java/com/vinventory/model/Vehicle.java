@@ -4,8 +4,9 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-@Entity
+
 @Table(name="vehicle")
+@Entity
 public class Vehicle {
 	
 	@Id
@@ -96,6 +97,11 @@ public class Vehicle {
 
 	public void setPrice(int price) {
 		this.price = price;
+	}
+
+	public Vehicle() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 	
 	
