@@ -21,13 +21,29 @@ public class VehicleService {
 		return repo.findAll();
 	}
 	
-	
+	public List<Vehicle> getVehicle(String make){
+		
+		return repo.findByMake(make);
+	}
 	
 	public String addVehicle(Vehicle vehicle) {
 		
 		repo.save(vehicle);
 		
 		return "The Vehicle has been added to the inventory";
+	}
+	
+	public String updateVehicle(Vehicle vehicle) {
+		
+		repo.save(vehicle);
+		
+		return "the vehicle has been updated";
+	}
+	
+	public String removeVehicle(int id) {
+		repo.deleteById(id);
+		
+		return "the vehicle has been deleted";
 	}
 
 }
